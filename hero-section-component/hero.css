@@ -1,12 +1,44 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "rubik", sans-serif;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../hero.jpg);
+  background-size: cover;
+  color: #fff;
+  padding-top: 32px;
+}
+
+.header-container {
+  width: 1100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.header-container-inner {
+  width: 50%;
 }
 
 body {
   color: #444;
   line-height: 1;
+  font-family: "rubik", sans-serif;
 }
 
 nav {
@@ -19,6 +51,7 @@ nav {
 h1 {
   font-size: 52px;
   margin-bottom: 32px;
+  line-height: 1.05;
 }
 
 p {
